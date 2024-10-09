@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Joel Guamaní - CV</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <title>Joel Guamaní - CV</title>
+</head>
+
 <body>
     <header>
         <h1>Joel Guamaní</h1>
@@ -14,28 +20,116 @@
     <nav>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, saepe. Deleniti facere id tenetur facilis, hic neque veniam error sequi modi, nihil nemo cumque, itaque ex labore rem placeat odit!</p>
-        </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
+            <p> Soy Joel Guamaní, estudiante de quinto semestre en Ingeniería en Ciencias de la Computación, apasionado
+                por la programación.
+                Me siento más cómodo trabajando en Java, aunque estoy completamente abierto a aprender nuevas librerías,
+                frameworks o lenguajes.
+                Recientemente, he obtenido una posición como desarrollador Java Trainee, donde espero aplicar mis
+                conocimientos y habilidades en un entorno profesional.
+                He trabajado en varios proyectos de manera colaborativa, lo que me ha permitido desarrollar habilidades
+                en trabajo en equipo y resolución de problemas.
+                Busco oportunidades para seguir creciendo y contribuyendo a proyectos innovadores en el campo del
+                desarrollo de software.
+            </p>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institución</th>
+                        <th>Título</th>
+                        <th>Periodo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Escuela Superior Politécnica del Litoral ESPOL</td>
+                        <td>Ingeniero en Ciencias de la Computación</td>
+                        <td>2022 - Presente</td>
+                    </tr>
+                    <tr>
+                        <td>Liceo Naval de Guayaquil</td>
+                        <td>Bachiller en Ciencias</td>
+                        <td>2019 - 2022</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="3">estudios</td>
+                </tfoot>
+            </table>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <div>
+                <h3>Java Developer Trainee</h3>
+                <p><strong>Compañía de Desarrollo de Software</strong> - Inicio: Octubre 2024 (Próxima experiencia laboral)</p>
+                <ul>
+                    <li>Desarrollar soluciones de software utilizando Java y frameworks orientados a objetos.</li>
+                    <li>Colaborar en equipos multifuncionales siguiendo metodologías ágiles, como Scrum.</li>
+                    <li>Participar en revisiones de código y aprender las mejores prácticas de desarrollo de software.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Proyectos Colaborativos</h3>
+            </div>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+                <li>Lenguajes de programación: Java, JavaScript, Python</li>
+                <li>Base de Datos: MySql</li>
+                <li>Control de Versiones: Git, GitHub</li>
+                <li>Herramientas: IntelIJ IDEA, Visual Studio Code</li>
+            </ul>
+            <h3>Habilidades Blandas</h3>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Resolución de problemas</li>
+                <li>Adaptabilidad</li>
+            </ul>
+            <h3>Idiomas</h3>
+            <ul>
+                <li>Español (nativo)</li>
+                <li>Inglés (Intermedio - B2)</li>
+            </ul>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div>
+                <form action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                    <label for="email">Correl electrónico:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="asunto">Asunto:</label>
+                    <select name="asunto" id="asunto" required>
+                        <option value="personal">Proyecto personal</option>
+                        <option value="sugerencias">Sugerencias</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensale"></textarea required>
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div id="map" style="width: 600px; height: 400px;"></div>
         </section>
     </main>
     <footer>
@@ -45,5 +139,17 @@
             <li><a href="https://github.com/isaiasgh" target="_blank">GitHub</a></li>
         </ul>
     </footer>
+    <script>
+        var map = L.map('map').setView([-2.14775, -79.96451], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-2.14775, -79.96451]).addTo(map)
+          .bindPopup('ESPOL - Escuela Superior Politécnica del Litoral')
+          .openPopup();
+    </script>
 </body>
+
 </html>
