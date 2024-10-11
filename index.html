@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -64,72 +64,127 @@
                         <td>2019 - 2022</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <td colspan="3">estudios</td>
-                </tfoot>
             </table>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <div>
+            <article class="experience-card">
                 <h3>Java Developer Trainee</h3>
+                
                 <p><strong>Compañía de Desarrollo de Software</strong> - Inicio: Octubre 2024 (Próxima experiencia laboral)</p>
-                <ul>
+                
+                <ul class="experience-description">
                     <li>Desarrollar soluciones de software utilizando Java y frameworks orientados a objetos.</li>
                     <li>Colaborar en equipos multifuncionales siguiendo metodologías ágiles, como Scrum.</li>
                     <li>Participar en revisiones de código y aprender las mejores prácticas de desarrollo de software.</li>
                 </ul>
-            </div>
-            <div>
-                <h3>Proyectos Colaborativos</h3>
-            </div>
+            </article>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-                <li>Lenguajes de programación: Java, JavaScript, Python</li>
-                <li>Base de Datos: MySql</li>
-                <li>Control de Versiones: Git, GitHub</li>
-                <li>Herramientas: IntelIJ IDEA, Visual Studio Code</li>
-            </ul>
-            <h3>Habilidades Blandas</h3>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Resolución de problemas</li>
-                <li>Adaptabilidad</li>
-            </ul>
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Español (nativo)</li>
-                <li>Inglés (Intermedio - B2)</li>
-            </ul>
+            <div class="skill-card">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill-description">
+                    <ul>
+                        <li>Lenguajes de programación: Java, JavaScript, Python</li>
+                        <li>Base de Datos: MySql</li>
+                        <li>Control de Versiones: Git, GitHub</li>
+                        <li>Herramientas: IntelIJ IDEA, Visual Studio Code</li>
+                    </ul>
+                </div>
+                <div class="skill-icon"></div>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Habilidades Blandas</h3>
+                <div class="skill-description">
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Adaptabilidad</li>
+                    </ul>
+                </div>
+                <div class="skill-icon"></div>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Idiomas</h3>
+                <div class="skill-description">
+                    <ul>
+                        <li>Español (nativo)</li>
+                        <li>Inglés (Intermedio - B2)</li>
+                    </ul>
+                </div>
+                <div class="skill-icons"></div>
+            </div>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <div class="project-card">
+                <h3>Crypto Exchange System</h3>
+                <div class="project-description">
+                    <p>Un sistema de intercambio de criptomonedas desarrollado en Java utilizando arquitectura MVC. Implementa características como creación de órdenes de compra y venta, procesamiento de transacciones y fluctuaciones de mercado basadas en eventos. <br>
+                    <strong>Tecnologías:</strong> Java, UML, POO, Archivos Serializados.</p>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/isaiasgh/CryptoExchange-System" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>AutoTrade</h3>
+                <div class="project-description">
+                    <p>Una plataforma de trading automatizado que utiliza algoritmos para ejecutar transacciones en mercados bursátiles. El sistema se adapta a diferentes estrategias y permite la simulación de operaciones <br>
+                    <strong>Tecnologías:</strong> Java, POO, Scene Builder, CSS.</p>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/Izaako04/EST.DATOS_1P_G4_PROY" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>PixelPlay</h3>
+                <div class="project-description">
+                    <p>Un simulador interactivo de tienda de videojuegos, diseñado para ofrecer a los usuarios la experiencia de explorar, buscar y comprar entre una amplia gama de títulos. El proyecto recrea el funcionamiento de una tienda virtual, permitiendo gestionar inventarios y simular compras, con una interfaz intuitiva y una experiencia de usuario fluida. <br>
+                    <strong>Tecnologías:</strong> Java, POO, Archivos Serializados.</p>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/isaiasgh/PixelPlay" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <div>
+            <div class="form-card">
                 <form action="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" required>
-                    <label for="email">Correl electrónico:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="asunto">Asunto:</label>
-                    <select name="asunto" id="asunto" required>
-                        <option value="personal">Proyecto personal</option>
-                        <option value="sugerencias">Sugerencias</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensale"></textarea required>
-                    <button>Enviar</button>
+                    <div class="form-section">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="asunto">Asunto:</label>
+                        <select name="asunto" id="asunto" required>
+                            <option value="personal">Proyecto personal</option>
+                            <option value="sugerencias">Sugerencias</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form-section">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
+                <div id="map" style="width: 600px; height: 400px;"></div>
             </div>
-            <div id="map" style="width: 600px; height: 400px;"></div>
         </section>
     </main>
     <footer>
@@ -151,5 +206,4 @@
           .openPopup();
     </script>
 </body>
-
 </html>
