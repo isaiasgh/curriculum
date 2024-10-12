@@ -17,6 +17,22 @@ body {
     margin: 0;
 }
 
+body h1, h2, h3 {
+    color: var(--acento);
+}
+
+body h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #1a2e2a;
+}
+
+body p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
 header {
     text-align: center;
     color: var(--acento);
@@ -44,7 +60,7 @@ header p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content:space-evenly;
+    justify-content:center;
     margin: 0;
     padding: 10px;
 }
@@ -53,11 +69,37 @@ header p {
     text-decoration: none;
     color: var(--acento);
     font-size: 18px;
-    padding: 10px;
+    padding: 10px 35px;
 }
 
 .sections ul a:hover {
     background-color: var(--acento);
     color: var(--blanco);
     transition: background-color 0.3s, color 0.3s;
+}
+
+#resumen {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.resumen-container {
+    display: flex;
+}
+
+.resumen-info-container {
+    margin-right: 40px;
+}
+
+.resumen-img-container {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.img-dev {
+    width: 300px;
+    height: 300px;
 }
