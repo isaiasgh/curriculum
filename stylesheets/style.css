@@ -27,10 +27,9 @@ body h2 {
 }
 
 body p {
-    font-size: 18px;
     margin-top: 15px;
     margin-bottom: 15px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 header {
@@ -50,6 +49,11 @@ header p {
     margin: 0;
     font-size: 20px;
     padding-bottom: 20px;
+}
+
+section {
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .sections {
@@ -81,8 +85,7 @@ header p {
 #resumen {
     display: flex;
     flex-direction: column;
-    margin-left: 250px;
-    margin-right: 250px;
+    font-size: 18px;
 }
 
 .resumen-container {
@@ -103,3 +106,44 @@ header p {
     width: 300px;
     height: 300px;
 }  
+
+.instituciones {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.institucion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.institucion-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.institucion-info p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.institucion-logo {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 180px;
+}
+
+.espol-logo {
+    width: 270px;
+    height: 107px;
+}
+
+.liceo-naval-logo {
+    width: 180px;
+    height: 180px;
+}
