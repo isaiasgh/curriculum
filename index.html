@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 
@@ -92,8 +94,9 @@
             <h2>Habilidades</h2>
             <div class="skills-container" id="h-tecnicas">
                 <div class="skill-card" id="h-tecnicas">
-                    <h3>Habilidades Técnicas 🔧</h3>
+                    
                     <div class="skill-description">
+                        <h3>Habilidades Técnicas 🔧</h3>
                         <ul>
                             <li>Java, JavaScript, Python</li>
                             <li>MySql</li>
@@ -127,8 +130,8 @@
                 </div>
                 
                 <div class="skill-card" id="h-blandas">
-                    <h3>Habilidades Blandas 👥</h3>
                     <div class="skill-description">
+                        <h3>Habilidades Blandas 👥</h3>
                         <ul>
                             <li>Trabajo en equipo</li>
                             <li>Resolución de problemas</li>
@@ -162,8 +165,8 @@
                 </div>
                 
                 <div class="skill-card" id="idiomas">
-                    <h3>Idiomas 🗣️</h3>
                     <div class="skill-description">
+                        <h3>Idiomas 🗣️</h3>
                         <ul>
                             <li>Español (nativo)</li>
                             <li>Inglés (Intermedio - B2)</li>
@@ -178,34 +181,59 @@
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <div class="project-card">
-                <h3>Crypto Exchange System</h3>
-                <div class="project-description">
-                    <p>Un sistema de intercambio de criptomonedas desarrollado en Java utilizando arquitectura MVC. Implementa características como creación de órdenes de compra y venta, procesamiento de transacciones y fluctuaciones de mercado basadas en eventos. <br>
-                    <strong>Tecnologías:</strong> Java, UML, POO, Archivos Serializados.</p>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/images/Crypto Exchange System.webp" alt="Crypto Exchange System">
+                    </div>
+                    <div class="project-description">
+                        <h3>Crypto Exchange System</h3>
+                        <p>Un sistema de intercambio de criptomonedas desarrollado en Java utilizando arquitectura MVC. Implementa características como creación de órdenes de compra y venta, procesamiento de transacciones y fluctuaciones de mercado basadas en eventos.</p>
+                    </div>
+                    <div class="project-tecno">
+                        <span>Java</span>
+                        <span>UML</span>
+                        <span>POO</span>
+                        <span>Archivos Serializados</span>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/isaiasgh/CryptoExchange-System" target="_blank">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
-                <div class="project-link">
-                    <a href="https://github.com/isaiasgh/CryptoExchange-System" target="_blank">Ver proyecto</a>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/images/AutoTrade.webp" alt="AutoTrade">
+                    </div>
+                    <div class="project-description">
+                        <h3>AutoTrade</h3>
+                        <p>Una plataforma de trading automatizado que utiliza algoritmos para ejecutar transacciones en mercados bursátiles. El sistema se adapta a diferentes estrategias y permite la simulación de operaciones.</p>
+                    </div>
+                    <div class="project-tecno">
+                        <span>Java</span>
+                        <span>POO</span>
+                        <span>Scene Builder</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/Izaako04/EST.DATOS_1P_G4_PROY" target="_blank">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <h3>AutoTrade</h3>
-                <div class="project-description">
-                    <p>Una plataforma de trading automatizado que utiliza algoritmos para ejecutar transacciones en mercados bursátiles. El sistema se adapta a diferentes estrategias y permite la simulación de operaciones <br>
-                    <strong>Tecnologías:</strong> Java, POO, Scene Builder, CSS.</p>
-                </div>
-                <div class="project-link">
-                    <a href="https://github.com/Izaako04/EST.DATOS_1P_G4_PROY" target="_blank">Ver proyecto</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>PixelPlay</h3>
-                <div class="project-description">
-                    <p>Un simulador interactivo de tienda de videojuegos, diseñado para ofrecer a los usuarios la experiencia de explorar, buscar y comprar entre una amplia gama de títulos. El proyecto recrea el funcionamiento de una tienda virtual, permitiendo gestionar inventarios y simular compras, con una interfaz intuitiva y una experiencia de usuario fluida. <br>
-                    <strong>Tecnologías:</strong> Java, POO, Archivos Serializados.</p>
-                </div>
-                <div class="project-link">
-                    <a href="https://github.com/isaiasgh/PixelPlay" target="_blank">Ver proyecto</a>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/images/PixelPlay.webp" alt="PixelPlay">
+                    </div>
+                    <div class="project-description">
+                        <h3>PixelPlay</h3>
+                        <p>Un simulador interactivo de tienda de videojuegos, diseñado para ofrecer a los usuarios la experiencia de explorar, buscar y comprar entre una amplia gama de títulos. El proyecto recrea el funcionamiento de una tienda virtual, permitiendo gestionar inventarios y simular compras, con una interfaz intuitiva y una experiencia de usuario fluida.</p>
+                    </div>
+                    <div class="project-tecno">
+                        <span>Java</span>
+                        <span>POO</span>
+                        <span>Archivos Serializados</span>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/isaiasgh/PixelPlay" target="_blank">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
