@@ -273,3 +273,47 @@ section {
     width: 80px;
     margin: 30px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secundario);
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer li {
+    align-content: center;
+    height: 50px;
+}
+
+#linkedin {
+    margin-right: 15px;
+}
+
+#github {
+    margin-left: 15px;;
+}
+
+footer p {    
+    margin-left: 50px;
+    margin-right: 50px;
+    align-content: center;
+}
+
+footer p, footer a {
+    text-decoration: none;
+    color: var(--acento);
+    font-size: 16px;
+
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
