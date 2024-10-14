@@ -325,7 +325,99 @@ section {
 i.fas, .project-link a {
     color: var(--acento);
     font-size: 16px;
-  }
+}
+
+#contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.form-card {
+    width: 600px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--acento);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid var(--secundario);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    width: 50%;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid var(--secundario);
+    border-radius: 4px;
+    font-size: 16px;
+    width: 50%;
+    appearance: none;
+    background-color: var(--blanco);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+select:hover {
+    border-color: var(--acento);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--acento);
+    box-shadow: 0 0 5px var(--secundario);
+}
+
+button {
+    padding: 10px 30px;
+    background-color: var(--acento);
+    color: var(--opcional);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.form-section {
+    display: flex;
+    
+}
+
+button:hover {
+    background-color: var(--secundario);
+    color: var(--acento);
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+}
 
 footer {
     display: flex;
@@ -338,22 +430,16 @@ footer ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding-left: 0px;
+    padding: 0px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 footer li {
-    align-content: center;
-    height: 50px;
-}
-
-#linkedin {
-    margin-right: 15px;
-}
-
-#github {
-    margin-left: 15px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 footer p {    
@@ -362,11 +448,15 @@ footer p {
     align-content: center;
 }
 
-footer p, footer a {
+footer p {
     text-decoration: none;
     color: var(--acento);
     font-size: 16px;
 
     line-height: 1.5;
     letter-spacing: 0.5px;
+}
+
+.icon-social-media {
+    fill: var(--acento);
 }
