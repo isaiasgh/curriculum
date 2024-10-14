@@ -4,17 +4,32 @@
     --secundario: #b9c0bf;
     --opcional: #e4e7e6;
 
+    --resumen: rgba(255, 255, 255, 0.9);
+    --sombra: rgba(0, 0, 0, 0.1);
+
     --fuente_principal: 3.8rem;
+}
+
+.dark-mode {
+    --blanco: #2c2c2c;
+    --acento: #d4dfd4;
+    --secundario: #5a6359;
+    --opcional: #727c6f;
+    
+    --resumen: #3e3e3e;
+    --sombra: rgba(0, 0, 0, 0.3);
 }
 
 html {
     font-family: 'Open Sans';
-    background-color: var(--blanco);
 }
 
 body {
+    background-color: var(--blanco);
+    color: var(--acento);
     padding: 0 45px;
     margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
 body h1, h2, h3 {
@@ -89,8 +104,8 @@ section {
     margin-top: 30px;
     margin-bottom: 50px;
     padding: 0px 25px 25px 25px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--resumen);
+    box-shadow: 0 4px 8px var(--sombra);
 }
 
 .resumen-container {
@@ -115,7 +130,7 @@ section {
 .instituciones {
     display: flex;
     justify-content:space-between;
-    border:0.9px solid var(--acento);
+    border:0.9px solid var(--secundario);
     border-radius: 5px;
 }
 
@@ -335,6 +350,7 @@ i.fas, .project-link a {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .form-card {
@@ -379,7 +395,7 @@ select {
     font-size: 16px;
     width: 50%;
     appearance: none;
-    background-color: var(--blanco);
+    background-color: white;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -421,6 +437,7 @@ button:hover {
 #map {
     width: 500px;
     height: 400px;
+    margin-top: 60px;
 }
 
 footer {
