@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-
+    
     <title>Joel Guamaní - CV</title>
 </head>
 
@@ -292,7 +292,7 @@
         <section id="contacto">
             <div class="form-card">
                 <h2>Contacto</h2>
-                <form action="">
+                <form id="contact-form" action="https://formspree.io/f/xpwzzkdq" method="POST">
                     <div class="form-section">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre" required>
@@ -314,8 +314,8 @@
                         </select>
                     </div>
                     <div class="form-section">
-                        <label for="message">Mensaje:</label>
-                        <textarea name="message" id="message" required></textarea>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
                     </div>
                     <div class="form-section">
                         <button type="submit">Enviar</button>
