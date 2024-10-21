@@ -8,6 +8,11 @@
     --sombra: rgba(0, 0, 0, 0.1);
 
     --fuente_principal: 3.8rem;
+
+    --fuente_h1: 2.5rem;
+    --fuente_h2: 1.875rem;
+    --fuente_h3: 1.125rem;
+    --fuente_peq: 1rem;
 }
 
 .dark-mode {
@@ -37,7 +42,7 @@ body h1, h2, h3 {
 }
 
 body h2 {
-    font-size: 1.875rem;
+    font-size: var(--fuente_h2);
     border-bottom: 0.125rem solid var(--acento);
 }
 
@@ -54,7 +59,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: var(--fuente_h1);
     margin-bottom: 0.625rem;
     margin-top: 0;
     padding-top: 0.9375rem;
@@ -62,7 +67,7 @@ header h1 {
 
 header p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: var(--fuente_h3);
     padding-bottom: 1.25rem;
 }
 
@@ -87,7 +92,7 @@ section {
 .sections ul a {
     text-decoration: none;
     color: var(--acento);
-    font-size: 1.125rem;
+    font-size: var(--fuente_peq);
     padding: 0.625rem 2.1875rem;
 }
 
@@ -100,7 +105,7 @@ section {
 #resumen {
     display: flex;
     flex-direction: column;
-    font-size: 1.125rem;
+    font-size: var(--fuente_peq);
     margin-top: 1.875rem;
     margin-bottom: 3.125rem;
     padding: 0 1.5625rem 1.5625rem;
@@ -126,6 +131,49 @@ section {
     width: 18.75rem;
     height: 18.75rem;
 }  
+
+@media (max-width: 480px) {
+    :root {
+        --fuente_h1: 2rem;
+        --fuente_h2: 1.5rem;
+        --fuente_h3: 1.2rem;
+        --fuente_peq: 1rem;
+    }
+
+    body {
+        padding: 0 0.8rem;
+        align-self: center;
+    }
+
+    section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #resumen {
+        margin-top: 0.5rem;
+        margin-bottom: 0rem;
+        
+    }
+
+    .resumen-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resumen-info-container {
+        margin-right: 0;
+    }
+
+    .resumen-img-container {
+        margin-left: 0;
+    }
+
+    .img-dev {
+        width: 10rem;
+        height:10rem;
+    }  
+}
 
 .instituciones {
     display: flex;
@@ -159,7 +207,7 @@ section {
 .institucion-info p {
     margin-top: 0.46875rem;
     margin-bottom: 0.46875rem;
-    font-size: 1.125rem;
+    font-size: var(--fuente_peq);
 }
 
 .institucion-logo {
@@ -179,6 +227,33 @@ section {
     height: 11.25rem;
 }
 
+@media (max-width: 480px) {
+    .instituciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .institucion {
+        width: 88%;
+        padding: 0.5rem 1rem;
+    }
+
+    .espol-logo {
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    .liceo-naval-logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #espol-inst {
+        border-left: 0rem;
+        border-top: 0.05625rem solid var(--secundario);
+    }
+}
+
 .experience-card {
    border: 0.05625rem solid var(--secundario);
    border-radius: 0.3125rem;
@@ -190,12 +265,12 @@ section {
 }
 
 .experience-card p {
-    font-size: 1.125rem;
+    font-size: var(--fuente_peq);
     margin-top: 0;
 }
 
 .experience-card li, .skill-card li {
-    font-size: 1.125rem;
+    font-size: var(--fuente_peq);
     margin-top: 0.9375rem;
     margin-bottom: 0.9375rem;
 }
@@ -214,6 +289,16 @@ section {
     position: absolute;
     left: 0;
     color: var(--acento);
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .experience-description {
+        padding-left: 0.5rem;
+    }
 }
 
 #habilidades {
@@ -290,6 +375,47 @@ section {
     margin: 1.875rem;
 }
 
+@media (max-width: 480px) {
+    .skills-container, .project-container {
+        flex-direction: column;
+    }
+
+    .skill-card, .project-card {
+        width: 100%;
+    }
+
+    #h-blandas, #idiomas {
+        margin-top: 1rem;
+    }
+
+    .skill-description {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .skill-description h3 {
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+
+    .skill-description ul {
+        padding-left: 1.8rem;
+    }
+
+    #h-tecnicas, #h-blandas {
+        margin-right: 0;
+    }
+
+    #h-blandas, #idiomas {
+        margin-left: 0;
+    }
+
+    .skill-icon {
+        height: 50%;
+        width: 18.75rem;
+    }
+}
+
 .project-card {
     margin: 0.625rem;
 }
@@ -338,7 +464,14 @@ section {
 
 i.fas, .project-link a {
     color: var(--acento);
-    font-size: 1rem;
+    font-size: var(--fuente_peq);
+}
+
+@media (max-width: 480px) {
+    .project-img img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #contacto {
@@ -372,7 +505,7 @@ textarea {
     margin-left: 0.625rem;
     border: 0.0625rem solid var(--secundario);
     border-radius: 0.25rem;
-    font-size: 1rem;
+    font-size: var(--fuente_peq);
     resize: vertical;
     width: 50%;
 }
@@ -388,7 +521,7 @@ select {
     margin-left: 0.625rem;
     border: 0.0625rem solid var(--secundario);
     border-radius: 0.25rem;
-    font-size: 1rem;
+    font-size: var(--fuente_peq);
     width: 50%;
     appearance: none;
     background-color: white;
@@ -414,7 +547,7 @@ button {
     color: var(--opcional);
     border: none;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: var(--fuente_peq);
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 0.625rem;
@@ -429,10 +562,34 @@ button:hover {
     color: var(--acento);
 }
 
+@media (max-width: 480px) {
+    #contacto {
+        margin-top: 0.5rem;
+        flex-direction: column;
+    }
+
+    .form-card {
+        width: 100%;
+    }
+
+    #form-button-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 #map {
     width: 31.25rem;
     height: 25rem;
     margin-top: 3.75rem;
+}
+
+@media (max-width: 480px) {
+    #map {
+        margin-top: 1rem;
+        height: 15rem;
+        width: 100%;
+    }
 }
 
 footer {
@@ -479,11 +636,44 @@ footer p {
 footer p {
     text-decoration: none;
     color: var(--acento);
-    font-size: 1rem;
+    font-size: var(--fuente_peq);
     line-height: 1.5;
     letter-spacing: 0.03125rem;
 }
 
 .icon-social-media {
     fill: var(--acento);
+}
+
+@media (max-width: 480px) {
+    #video {
+        flex-direction: column;
+
+    }
+
+    #video iframe {
+        height: 15rem;
+        width: 100%;
+        order: 2;
+    }
+
+    #video div {
+        width: 100%;
+    }
+
+    footer ul {
+       margin: 0.5rem 1rem;
+    }
+
+    footer li {
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    footer p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
 }
