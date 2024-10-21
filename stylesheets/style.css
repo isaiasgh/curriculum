@@ -80,6 +80,56 @@ section {
     background-color: var(--secundario);
 }
 
+.menu-bar {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .sections {
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        z-index: 10000;
+    }
+
+    header nav ul li {
+        margin-top: 5rem;
+    }
+
+    header #nav-menu {
+        display: block;
+        float: none;
+    }
+
+    #nav-menu a {
+        font-size: var(--fuente_h2);;
+    }
+
+    .menu-bar {
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+        top: 0;
+    }
+
+    .btn-menu {
+        color: var(--acento);
+        text-decoration: none;
+    }
+
+    .btn-menu:hover {
+        color: var(--blanco);
+        background-color: var(--acento);
+    }
+
+    .menu-bar a {
+        font-size: var(--fuente_h1);
+    }
+}
+
 .sections ul {
     display: flex;
     flex-direction: row;
