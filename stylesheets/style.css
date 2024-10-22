@@ -218,26 +218,27 @@ section {
 
     .resumen-img-container {
         margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .img-dev {
-        width: 10rem;
-        height:10rem;
+        width: 50%;
+        height: auto;
     }  
 }
 
 .instituciones {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 0.05625rem solid var(--secundario);
     border-radius: 0.3125rem;
 }
 
 .institucion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
+    display: grid;
+    grid-template-rows: auto 1fr;
     padding: 0.625rem 3.125rem;
 }
 
@@ -280,6 +281,7 @@ section {
 
 @media (max-width: 480px) {
     .instituciones {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
