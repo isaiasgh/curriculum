@@ -213,6 +213,7 @@ section {
     }
 
     .resumen-info-container {
+        width: 100%;
         margin-right: 0;
     }
 
@@ -473,8 +474,11 @@ section {
     }
 }
 
-.project-card {
-    margin: 0.625rem;
+@media (max-width: 480px) {
+    .project-card {
+        margin: 0.5rem auto;
+    }
+    /*margin: 0.625rem;*/
 }
 
 .project-description {
@@ -713,7 +717,7 @@ footer p {
 @media (max-width: 480px) {
     #video {
         flex-direction: column;
-
+        align-items: center;
     }
 
     #video iframe {
