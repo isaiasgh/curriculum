@@ -6,6 +6,8 @@ const darkMode = localStorage.getItem('dark-mode');
 if (darkMode === 'enabled') {
     body.classList.add('dark-mode');
     toggleButton.textContent = '🌞 Modo Claro';
+    switchDarkImage ("img-dev", "backend-developer-darkMode.webp");
+    switchDarkImage ("espol-logo", "espol-logo-darkMode.webp");
 }
 
 toggleButton.addEventListener('click', function() {

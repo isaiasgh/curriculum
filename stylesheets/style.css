@@ -28,14 +28,15 @@
 html {
     font-family: 'Open Sans';
     opacity: 0;
-    transform: scale(0.95);
+    transform: translateY(-10px) scale(1);
     animation: fadeInScale 1s ease-out forwards;
+    transform-origin: top;
 }
 
 @keyframes fadeInScale {
     to {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0) scale(1);
     }
 }
 
@@ -94,7 +95,14 @@ section {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 1123px) {
+    section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 915px) {
     .sections {
         top: 0;
         left: -100%;
