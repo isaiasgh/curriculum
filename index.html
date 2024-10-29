@@ -26,7 +26,7 @@
         <button id="theme-toggle">🌙 Modo Oscuro</button>
 
         <h1>Joel Guamaní Herrera</h1>
-        <p>Java Developer</p>
+        <p>Java Developer ☕️</p>
 
         <div class="menu-bar">
             <a href="#" class="btn-menu">☰</a>
@@ -356,17 +356,18 @@
     </footer>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map').setView([-2.14775, -79.96451], 15);
-
+        var map = L.map('map').setView([-2.1445878, -79.9678366], 18);
+    
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-
-        L.marker([-2.14775, -79.96451]).addTo(map)
-            .bindPopup('ESPOL - Escuela Superior Politécnica del Litoral')
+    
+        L.marker([-2.1445878, -79.9678366]).addTo(map)
+            .bindPopup('Facultad de Ingeniería en Electricidad y Computación FIEC - ESPOL')
             .openPopup();
     </script>
+    
     <script src="./js/theme-switcher.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="./js/toggle-menu.js"></script>
